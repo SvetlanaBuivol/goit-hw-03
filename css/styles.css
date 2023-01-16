@@ -21,6 +21,8 @@ body {
 }
 
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -81,21 +83,68 @@ ul {
     color: var(--hover-focus-color);
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 1px solid tomato; */
+}
+
 
 /* Hero */
+.hero {
+    text-align: center;
+    background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 48px;
+    width: 494px;
+
     color: var(--hero-title-color);
 
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
 
-    background-color: #434455;
+}
+
+/* Hidden */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Section */
+.section {
+   /* background-color: aqua; */
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.section.padding-bottom {
+    padding-top: 0;
+    padding-bottom: 120px;
 }
 
 
-/* Section */
+
 .section-title {
     color: var(--heading-text-color);
   
@@ -104,10 +153,18 @@ ul {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 72px;
+
 }
 
 
 /* Features and Team */
+.features {
+
+}
+
 .features .title,
 .team-title {
     color: var(--heading-text-color);
@@ -115,6 +172,29 @@ ul {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.features p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Team backgrnd */
+.section.team {
+    background-color: var(--footer-logo-color);
+}
+
+/* Team photo margine */
+.team img {
+    margin-bottom: 32px;
+}
+
+.team p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -129,15 +209,28 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
 }
 .button.filters {
     color: var(--hover-focus-color);
     background-color: var(--footer-logo-color);
+
+    padding: 12px 24px;
+    border: 1px solid var(--footer-text);
 }
 .button.filters:hover,
 .button.filters:focus {
     color: var(--hero-title-color);
     background-color: var(--button-backgrnd-color-accent);
+}
+
+.button.hero {
+    padding: 16px 32px;
+    min-width: 169px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -158,6 +251,23 @@ ul {
 }
 .footer p {
     color: var(--footer-text);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--heading-text-color);
+}
+
+.footer-content {
+    width: 264px;
+}
+.footer-content a {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 
