@@ -233,6 +233,10 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.buttons-potfolio {
+    margin-bottom: 72px;
+}
+
 
 /* Footer */
 .footer-logo {
@@ -279,15 +283,33 @@ ul {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-decoration: none;
+
+    margin-top: 32px;
+    margin-bottom: 8px;
+
+
 }
 .portfolio p {
     color: var(--primary-text-color);
 
     font-family: 'Roboto';
-    text-decoration: none;
+
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 .portfolio .link:hover,
 .portfolio .link:focus {
     color: var(--hover-focus-color);
+ }
+
+ .portfolio.link {
+ }
+
+ .section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+ }
+
+ .link {
+    text-decoration: none;
  }
