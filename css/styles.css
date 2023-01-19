@@ -390,6 +390,7 @@ ul {
     padding-bottom: 32px;
     border: 1px solid var(--footer-text);
     border-top: none;
+    padding-left: 16px;
  }
 
  .prtfl-items {
